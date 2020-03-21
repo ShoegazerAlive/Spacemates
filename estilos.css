@@ -1,0 +1,222 @@
+.btn btn-outline-success my-2 my-sm-0{
+    flex: display;
+    justify-content: space-between;
+    font-family: ;
+}
+.btn btn-outline-success my-2 my-sm-0:hover{
+    background: none;
+    color: none;
+    
+}
+.navbar{
+    position: fixed;
+    width:100%;
+    transition: background-color 1s;
+  
+  }
+.home{
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: url('Assets/co-working-space-design.jpg')no-repeat center center/cover;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.botones{
+    display: flex;
+
+}
+.dropdown{
+    padding-right: 75px;
+}
+
+.encabezado{
+        display: flex;
+        justify-content: first baseline;
+        flex-direction: column;;
+        height: 7vh;
+        width: 100%;
+        background: white;
+        padding-left: 85px;
+        padding-top: 30px;
+        font-family: 'GothamBook';
+        font-weight: bold;
+        color: darkslategray;
+}
+
+.ciudades{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding:0;
+}
+.imagen{
+    height: 50%;
+    width: 100%;
+}
+
+.card-body{
+    height: 55vh;
+    padding: 10px 20px;
+    padding-right: 5px;
+}
+.col-6 col-md-4:hover{
+    box-shadow: 10px 10px 5px darkslategray;
+}
+
+.textociudades{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    text-align: left;
+}
+p{
+    color: blue;
+}
+.subtexto{
+    color: black;
+    font-size: ;
+}
+
+li{
+    color: hsl(14, 90%, 51%);
+}
+
+.about{
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: black;
+}
+.about h1{
+    color: white;
+}
+
+.formulario{
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: hsl(14, 90%, 51%);
+}
+
+.pie{
+    background: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7vh;
+    width: 100%;
+}
+.btn btn-outline-success my-2 my-sm-0:hover{
+    color: darkorange;
+
+}
+
+.bg-5{
+    /* background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%); */
+  }
+ 
+ .animated-shadow {
+   color: #ffffff;
+   font: normal 30px Varela Round, sans-serif;
+   height: 30px;
+   left: 0;
+   letter-spacing: 5px;
+   text-align: center;
+   text-transform: uppercase;
+   width: 100%;
+   animation: move linear 2000ms infinite;
+   z-index: 2
+ }
+ /*Animación para rotar las sombras*/
+ @keyframes move {
+   0% {
+     text-shadow:
+       4px -4px 0 hsl(14, 90%, 51%),
+       3px -3px 0 hsl(14, 90%, 51%),
+       2px -2px 0 hsl(14, 90%, 51%),
+       1px -1px 0 hsl(14, 90%, 51%),
+       -4px 4px 0 hsl(184, 89%, 7%),
+       -3px 3px 0 hsl(184, 89%, 7%),
+       -2px 2px 0 hsl(184, 89%, 7%),
+       -1px 1px 0 hsl(184, 89%, 7%)
+     ;
+   }
+   25% {
+     text-shadow:
+       -4px -4px 0 hsl(184, 89%, 7%),
+       -3px -3px 0 hsl(184, 89%, 7%),
+       -2px -2px 0 hsl(184, 89%, 7%),
+       -1px -1px 0 hsl(184, 89%, 7%),
+       4px 4px 0 hsl(14, 90%, 51%),
+       3px 3px 0 hsl(14, 90%, 51%),
+       2px 2px 0 hsl(14, 90%, 51%),
+       1px 1px 0 hsl(14, 90%, 51%)
+     ;
+   }
+   50% {
+     text-shadow:
+       -4px 4px 0 hsl(14, 90%, 51%),
+       -3px 3px 0 hsl(14, 90%, 51%),
+       -2px 2px 0 hsl(14, 90%, 51%),
+       -1px 1px 0 hsl(14, 90%, 51%),
+       4px -4px 0 hsl(184, 89%, 7%),
+       3px -3px 0 hsl(184, 89%, 7%),
+       2px -2px 0 hsl(184, 89%, 7%),
+       1px -1px 0 hsl(184, 89%, 7%)
+     ;
+   }
+   75% {
+     text-shadow:
+       4px 4px 0 hsl(184, 89%, 7%),
+       3px 3px 0 hsl(184, 89%, 7%),
+       2px 2px 0 hsl(184, 89%, 7%),
+       1px 1px 0 hsl(184, 89%, 7%),
+       -4px -4px 0 hsl(14, 90%, 51%),
+       -3px -3px 0 hsl(14, 90%, 51%),
+       -2px -2px 0 hsl(14, 90%, 51%),
+       -1px -1px 0 hsl(14, 90%, 51%)
+     ;
+   }
+   100% {
+     text-shadow:
+       4px -4px 0 hsl(14, 90%, 51%),
+       3px -3px 0 hsl(14, 90%, 51%),
+       2px -2px 0 hsl(14, 90%, 51%),
+       1px -1px 0 hsl(14, 90%, 51%),
+       -4px 4px 0 hsl(184, 89%, 7%),
+       -3px 3px 0 hsl(184, 89%, 7%),
+       -2px 2px 0 hsl(184, 89%, 7%),
+       -1px 1px 0 hsl(184, 89%, 7%)
+     ;
+   }
+ }

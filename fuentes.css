@@ -1,0 +1,12 @@
+@font-face{
+    font-family: GothamBook;
+    src:url(gotham/GothamBook.ttf);
+}
+@font-face{
+    font-family: GothamUltraItalic;
+    src:url(gotham/Gotham-UltraItalic.otf);
+}
+@font-face{
+    font-family: GothamBold;
+    src:url(gotham/Gotham-Black.otf);
+}
