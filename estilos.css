@@ -16,7 +16,8 @@
   font-size: 13px;
   color: orange;
   letter-spacing: 1px;
-  line-height: 55px;
+  line-height: 50px;
+  padding-top: 10px;
   border: 2px solid orange;
   border-radius: 40px;
   background: white;
@@ -37,10 +38,11 @@
   font-size: 13px;
   color: #2a2af0;
   letter-spacing: 1px;
-  line-height: 55px;
+  line-height: 50px;
+  padding-top: 10px;
   border: 2px solid #2a2af0;
   border-radius: 40px;
-  background: white;
+  background: whitesmoke;
   transition: all 0.3s ease 0s;
   text-align: center;
   text-decoration: none;
