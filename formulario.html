@@ -3,145 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Spacemates</title>
-    <style>
-
-        @font-face {
-        font-family: Circular;
-        src: url(assets/Circular);
-        }
-
-        @font-face {
-         font-family: Circular;
-         src: url(assets/Gotham);
-        }
-
-        body{
-            font-family: Gotham ;
-        }
-
-        p{
-            font-weight: bold;
-            font-size: 1.5em;
-        }
-
-        .info-div{
-            padding-left:2%;
-
-        }
-        
-        .form-div{
-            padding-left: 2%;
-            display: none;
-
-        }
-
-        .form-group{
-            text-align: center;
-        }
-
-        .form-group input , .btn{
-            border-radius: 50px;
-        }
-
-        .form-group label{
-            font-weight: bold;
-        }
-
-        .form-control:focus {
-            box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0.25);
-            border-color: orange;
-           
-        }
-    </style>
-</head> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Form Spacemates</title>
+</head>
 <body>
 
-<div class="container-expanded">
-    <!-- Image and text -->
-  <nav class="navbar navbar-light bg-transparent">
-    <a class="navbar-brand" href="#">
-      <img src="assets/Logotipo/Logo_SpaceMates.png" width="150" class="d-inline-block align-top" alt="">
-    </a>
-  </nav>
-  <div class="row">
-    <div class="col-sm info-div">
-        <h1>¡Estás a un paso de formar parte del futuro del trabajo!</h1>
-        <div class="input-group mb-3">
-            <select class="custom-select" id="inputGroupSelect02">
-              <option value="NONE" selected>¿Qué ciudad estás buscando?</option>
-              <option value="PUEBLA">PUEBLA</option>
-              <option value="GUADALAJARA">GUADALAJARA</option>
-              <option value="QUERETARO">QUERETARO</option>
-              <option value="MONTERREY">MONTERREY</option>
-              <option value="TIJUANA">TIJUANA</option>
-              <option value="MERIDA">MERIDA</option>
-              <option value="LEON">LEON</option>
-              <option value="VERACRUZ">VERACRUZ</option>
-              <option value="AGUASCALIENTES">AGUASCALIENTES</option>
-              <option value="SAN LUIS POTOSI">SAN LUIS POTOSI</option>
-              <option value="ACAPULCO">ACAPULCO</option>
-              <option value="TUXTLA">TUXTLA</option>
-              <option value="SAN CRISTOBAL">SAN CRISTOBAL</option>
-              <option value="TORREON">TORREON</option>
-              <option value="MANZANILLO">MANZANILLO</option>
-              <option value="CUERNAVACA">CUERNAVACA</option>
-              <option value="ZACATECAS">ZACATECAS</option>
-            </select>      
-        </div>
-        <button type="button" class="btn btn-warning btn-block" onclick="nextForm()">Siguiente</button>
-        <p>Sin depósito <br> ni plazo forzoso  <br> desde $1850.00 <br> por membresía individual</p>
-    </div>
-    <div class="col-sm form-div">
-        <h2>¡Estás a un paso de formar parte del futuro del trabajo!</h2>
-        <form id="spaceform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSzdpqGCTKxN9d58CMRJau6o09iewhydy9KUfiXyDiHVNaVA/formResponse" target="_self" method="POST"> 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Escribe tu nombre</label>
-                <input type="text" required="required" autocomplete="off" name="entry.364299609" class="form-control" aria-describedby="emailHelp">
-              </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Correo electrónico</label>
-              <input type="email"required="required" autocomplete="off" name="entry.537620353" class="form-control" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="">Teléfono de contacto</label>
-                <input type="number" required="required" autocomplete="off" name="entry.2021172833" class="form-control" >
-            </div>
-            <div class="form-group">
-                <label for="">Ciudad</label>
-                <input type="text" required="required" autocomplete="off" name="entry.828064187" class="form-control" >
-            </div>
-            <div class="form-group">
-                <label for="">Nombre de la empresa</label>
-                <input type="text" required="required" autocomplete="off" name="entry.227806073" class="form-control" >
-            </div>
-            <div class="form-group">
-                <label for="">Número personas</label>
-                <input type="text"required="required" autocomplete="off" name="entry.447853792" class="form-control" >
-            </div>
-            <button type="submit" required="required" id="submit-form" value="submit" class="btn btn-warning btn-block">Solicitar</button>
-          </form>
-    </div>
-    <div class="col-sm">    
-        <img src="assets/Imagenes/co-working-space-design.jpg" alt="">
-    </div>
+  <div class="container">  
+    <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSzdpqGCTKxN9d58CMRJau6o09iewhydy9KUfiXyDiHVNaVA/formResponse" target="_self" method="POST">
+      <h3><img src="Assets/imagenes/Logo_SM_Prueba_Glow_Orange_Mod.png" style="height: 8vh; width: 45%;" alt=""></h3>
+      <h4>¡Estás a un paso de formar parte del futuro del trabajo!</h4>
+      <fieldset>
+        <input placeholder="Tu nombre" autocomplete="off" name="entry.364299609" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Tu dirección de email" autocomplete="off" name="entry.537620353" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Tu télefono" autocomplete="off" type="tel" name="entry.2021172833" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Ciudad" name="entry.447853792" autocomplete="off" type="text" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Número de personas" autocomplete="off" name="entry.447853792" type="text" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Solicitando">Solicitar</button>
+      </fieldset>
+    </form>
+   
+    
   </div>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-<script>
-    function nextForm(){
-        console.log(document.getElementsByClassName("info-div"))
-        document.getElementsByClassName("info-div")[0].style.display = "none";
-        document.getElementsByClassName("form-div")[0].style.display = "block";
-    }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>
