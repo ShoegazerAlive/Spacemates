@@ -1,12 +1,26 @@
-@font-face{
-    font-family: GothamBook;
-    src:url(gotham/GothamBook.ttf);
+@font-face {
+    font-family: 'Gotham';
+    src: url('Assets/Gotham/GothamBook.eot') format('eot'),
+         url('Assets/Gotham/GothamBook.otf') format('otf'),
+         url('Assets/Gotham/GothamBook.svg') format('svg'),
+         url('Assets/Gotham/GothamBook.ttf') format('ttf'),
+         url('Assets/Gotham/GothamBook.woff') format('woff'),
+         url('Assets/Gotham/GothamBook.woff2') format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+
 }
-@font-face{
-    font-family: GothamUltraItalic;
-    src:url(gotham/Gotham-UltraItalic.otf);
-}
-@font-face{
-    font-family: GothamBold;
-    src:url(gotham/Gotham-Black.otf);
+
+@font-face {
+    font-family: 'Cirular';
+    src: url('Assets/Circular/CircularStd-Black.eot') format('eot'),
+         url('Assets/Circular/CircularStd-Black.otf') format('otf'),
+         url('Assets/Circular/CircularStd-Black.svg') format('svg'),
+         url('Assets/Circular/CircularStd-Black.ttf') format('ttf'),
+         url('Assets/Circular/CircularStd-Black.woff') format('woff'),
+         url('Assets/Circular/CircularStd-Black.woff2') format('woff2');
+         
+    font-weight: normal;
+    font-style: normal;
 }

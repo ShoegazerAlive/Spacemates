@@ -3,46 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="formulario.css">
-    <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
-    <title>Formulario</title>
-</head>
-<body>
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <header class="ccheader">
-            <img src="Assets/Logo_SM_Prueba_00.png" style="height:50hv; width: 30%;" alt="">
-            <h1>Envíanos tus datos y pronto nos pondremos en contacto contigo</h1>	
-        </header>
+    <title>Spacemates</title>
+    <style>
+
+        @font-face {
+        font-family: Circular;
+        src: url(assets/Circular);
+        }
+
+        @font-face {
+         font-family: Circular;
+         src: url(assets/Gotham);
+        }
+
+        body{
+            font-family: Gotham ;
+        }
+
+        p{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .info-div{
+            padding-left:2%;
+
+        }
         
-        <div class="wrapper">
-            <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSzdpqGCTKxN9d58CMRJau6o09iewhydy9KUfiXyDiHVNaVA/formResponse" target="_self" method="POST" class="ccform">
-            <div class="ccfield-prepend">
-                <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-                <input class="ccformfield" name="entry.364299609" id="nombre" type="text" placeholder="Nombre"required>
-            </div>
-            <div class="ccfield-prepend">
-                <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
-                <input class="ccformfield" name="entry.537620353" id="email" type="text" placeholder="Email" required>
-            </div>
-            <div class="ccfield-prepend">
-                <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
-                <input class="ccformfield" name="entry.1429983582" id="telefono" type="text" placeholder="Teléfono">
-            </div>
-             <div class="ccfield-prepend">
-                <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
-                <input class="ccformfield" name="entry.828064187" id="ciudad" type="text" placeholder="Ciudad" required>
-            </div>
-            <div class="ccfield-prepend">
-                    <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-                    <input class="ccformfield" name="entry.447853792" id="personas" type="text" placeholder="Número de personas" required>
-                </div>
-            <div class="ccfield-prepend">
-                <input class="ccbtn" type="submit" value="Enviar">
-            </div>
-            </form>
+        .form-div{
+            padding-left: 2%;
+            display: none;
+
+        }
+
+        .form-group{
+            text-align: center;
+        }
+
+        .form-group input , .btn{
+            border-radius: 50px;
+        }
+
+        .form-group label{
+            font-weight: bold;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0.25);
+            border-color: orange;
+           
+        }
+    </style>
+</head> 
+<body>
+
+<div class="container-expanded">
+    <!-- Image and text -->
+  <nav class="navbar navbar-light bg-transparent">
+    <a class="navbar-brand" href="#">
+      <img src="assets/Logotipo/Logo_SpaceMates.png" width="150" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
+  <div class="row">
+    <div class="col-sm info-div">
+        <h1>¡Estás a un paso de formar parte del futuro del trabajo!</h1>
+        <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect02">
+              <option value="NONE" selected>¿Qué ciudad estás buscando?</option>
+              <option value="PUEBLA">PUEBLA</option>
+              <option value="GUADALAJARA">GUADALAJARA</option>
+              <option value="QUERETARO">QUERETARO</option>
+              <option value="MONTERREY">MONTERREY</option>
+              <option value="TIJUANA">TIJUANA</option>
+              <option value="MERIDA">MERIDA</option>
+              <option value="LEON">LEON</option>
+              <option value="VERACRUZ">VERACRUZ</option>
+              <option value="AGUASCALIENTES">AGUASCALIENTES</option>
+              <option value="SAN LUIS POTOSI">SAN LUIS POTOSI</option>
+              <option value="ACAPULCO">ACAPULCO</option>
+              <option value="TUXTLA">TUXTLA</option>
+              <option value="SAN CRISTOBAL">SAN CRISTOBAL</option>
+              <option value="TORREON">TORREON</option>
+              <option value="MANZANILLO">MANZANILLO</option>
+              <option value="CUERNAVACA">CUERNAVACA</option>
+              <option value="ZACATECAS">ZACATECAS</option>
+            </select>      
         </div>
-        
+        <button type="button" class="btn btn-warning btn-block" onclick="nextForm()">Siguiente</button>
+        <p>Sin depósito <br> ni plazo forzoso  <br> desde $1850.00 <br> por membresía individual</p>
+    </div>
+    <div class="col-sm form-div">
+        <h2>¡Estás a un paso de formar parte del futuro del trabajo!</h2>
+        <form id="spaceform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSzdpqGCTKxN9d58CMRJau6o09iewhydy9KUfiXyDiHVNaVA/formResponse" target="_self" method="POST"> 
+            <div class="form-group">
+                <label for="exampleInputEmail1">Escribe tu nombre</label>
+                <input type="text" required="required" autocomplete="off" name="entry.364299609" class="form-control" aria-describedby="emailHelp">
+              </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo electrónico</label>
+              <input type="email"required="required" autocomplete="off" name="entry.537620353" class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="">Teléfono de contacto</label>
+                <input type="number" required="required" autocomplete="off" name="entry.2021172833" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="">Ciudad</label>
+                <input type="text" required="required" autocomplete="off" name="entry.828064187" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="">Nombre de la empresa</label>
+                <input type="text" required="required" autocomplete="off" name="entry.227806073" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="">Número personas</label>
+                <input type="text"required="required" autocomplete="off" name="entry.447853792" class="form-control" >
+            </div>
+            <button type="submit" required="required" id="submit-form" value="submit" class="btn btn-warning btn-block">Solicitar</button>
+          </form>
+    </div>
+    <div class="col-sm">    
+        <img src="assets/Imagenes/co-working-space-design.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+    function nextForm(){
+        console.log(document.getElementsByClassName("info-div"))
+        document.getElementsByClassName("info-div")[0].style.display = "none";
+        document.getElementsByClassName("form-div")[0].style.display = "block";
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
