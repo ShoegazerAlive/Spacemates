@@ -1,85 +1,129 @@
-.btn-default{
-    flex: display;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 30px;
-}
-.btn-default1{
-    flex: display;
-    justify-content: space-between;
-    padding-right: 10px;
-    margin-right: 30px;
-}
-.btn-default {
-  font-family: Gotham;
-  font-weight: bold;
-  font-size: 13px;
-  color: orange;
-  letter-spacing: 1px;
-  line-height: 50px;
-  padding-top: 10px;
-  border: 2px solid orange;
-  border-radius: 40px;
-  background: white;
-  transition: all 0.3s ease 0s;
-  text-align: center;
-  text-decoration: none;
-}
-
-.btn-default:hover {
-  color: black;
-  background: orange;
-  border: 2px solid orange;
-}
-
-.btn-default1 {
-  font-family: Gotham;
-  font-weight: bold;
-  font-size: 13px;
-  color: #2a2af0;
-  letter-spacing: 1px;
-  line-height: 50px;
-  padding-top: 10px;
-  border: 2px solid #2a2af0;
-  border-radius: 40px;
-  background: whitesmoke;
-  transition: all 0.3s ease 0s;
-  text-align: center;
-  text-decoration: none;
-}
-
-.btn-default1:hover {
-  color: white;
-  background: #2a2af0;
-  border: 2px solid #2a2af0;
-}
-
-.navbar{
-    position: fixed;
-    width:100%;
-    transition: background-color 1s;
-  
-  }
-.home{
+.menu{
+    background: rgba(0, 0, 0, .1);
     display: flex;
     flex-flow: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
+    height: 60px;
     width: 100%;
-    background: url('Assets/imagenes/co-working-space-design.jpg')no-repeat center center/cover;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    text-decoration: none;
+    position: fixed;
 }
-.titulo{
+    .logo{
+        padding-left: 20px;
+        flex: 1 1 auto;
+    }
+        .logo a{
+            color: whitesmoke;
+            font-size: 30px;
+            
+        }
+        .logo a:hover{
+            color: darkslategray;
+        }
+    .nav{
+        padding-left: 20px;
+        padding-bottom: 10px;
+        flex: 5 1 auto;
+    }
+        .nav a{
+            color: whitesmoke;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+        .nav a:hover{
+            color: darkslategray;
+        }
+    .social1{
+        display: flex;
+        flex: 1 1 auto;
+    }
+        .social1 a{
+            font-size: 18px;
+            color: darkblue;
+            padding: 0 5px;
+            text-decoration: none;
+    
+        }
+        .social a:hover{
+            color: darkslategray;
+        }
+
+.home{
+    height: 650px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-}
-.botones{
-    display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    align-items:center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: right;
+    align-content: center;
+    background: url('Assets/imagenes/co-working-space-design.jpg') no-repeat center center/cover;
+    color: darkorange;
+}
+.w3layouts{
+    width:70%;
+	margin:0 80px;
+}
+.signin-agile {
+    width: 55%;
+    float: right;
+	background:#ffffff99;
+	padding: 5px 60px;
+	transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	height:550px;
+	margin: 2em 0;
+}
+
+.signin-agile h2{
+	font-size:40px;
+	color: black;
+    margin-bottom:20px;
+    margin-top: 0px;
+}
+.signin-agile h6{
+	font-size:20px;
+	color: black;
+    margin-bottom:20px;
+    margin-top: 0px;
+}
+
+input[type="submit"]{
+    background:transparent;
+    border:5px, solid, darkorange;
+    border-color: darkorange;
+    width: 100%;
+	padding:13px 0;
+	font-size:16px;
+	color:black;
+	cursor:pointer;
+	outline:none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	width:100%;
+	border:none;
+	margin-top:25px;
+	border-radius:25px;
+}
+
+input[type="submit"]:hover{
+    background:darkorange;
+    color:white;
+}
+.barra{
+    width: 100%;
+    color: darkorange;
+    -webkit-slider-runnable-track: orange;
+    background: orange; 
 
 }
 .encabezado{
@@ -147,37 +191,167 @@ li{
     font-family: Gotham;
 }
 
-.about{
+.banner{
     display: flex;
     flex-flow: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 30vh;
     width: 100%;
-    background: black;
+    background: url('Assets/imagenes/oficina.jpg') no-repeat center center/cover;
 }
-.about h1{
-    color: white;
-    
+.titulo{
+    width: 100%;
+    height: 10vh;
 }
 
+.spacemates{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
+    .divspace{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 50%;
+        text-align: justify;
+        padding: 20px 50px;
+        flex-direction: column;
+        font-size: 25px;
+
+    }
+        .divspace h2{
+            font-size: 30px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            ;
+        }
+        .divspace {
+            ;
+        }
+    .imagenspace{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+
+.about{
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 120vh;
+    width: 100%;
+    background: whitesmoke;
+}
+.about h1{
+    color: blue;
+    padding-top: 60px;
+    font-size: 50px;
+}
+.about h2{
+    color: gray;
+    padding-top: 5px;
+    font-size: 30px;
+}
+.titulo-icono{
+    display: flex;
+    justify-content: space-between;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 40px;
+}
+.logos{
+    height: 30vh;
+    width: 30%;
+}
+.descripcion{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    height: 30vh;
+    width: 100%;
+}
+    .boton-about{
+
+    }
+
+.clientes{
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+    background: white;
+    color: blue;
+    padding-top: 30px;
+
+}
+    .cliente h1{
+        color: blue;
+        padding-top: 100px;
+        font-size: 50px;
+    }
+
+    .ico-clientes{
+        display: flex;
+        justify-content: space-between;
+    }
+
 .pie{
-    background: black;
+    background: orange;
     color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 7vh;
+    text-align: center;   
+    height: 50vh;
     width: 100%;
 }
+
+    .tel-dir{
+        height: 30vh;
+        width: 50%;
+        display: flex;
+        background: orange;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction:column;
+    }
+        .dir{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    .social{
+        height: 30vh;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: orange;
+    }
 .btn btn-outline-success my-2 my-sm-0:hover{
     color: orange;
 
 }
-
-
-
-
