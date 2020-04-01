@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,7 +12,11 @@
     <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="Spacemates.js"></script>
     <link rel="stylesheet" href="Assets/Tipos/fontawesome-free-5.13.0-web/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
     
 
     <title>Spacemates</title>
@@ -27,7 +31,7 @@
         </nav>
  -->
     
-        <div class="menu margen-interno">
+        <div class="menu margen-interno" style="z-index: 3;">
           <div class="logo">
               <a href="index-flex.html">LogoCorporativo</a>
           </div>
@@ -48,17 +52,43 @@
                   <h2 style="padding-top: 10px;">Forma Parte del futuro del trabajo</h2>
                   <form action="#" method="post">
                       
-                  
-                      <input type="submit" value="¿Qué ciudad estás buscando?">
+                      <div>
+                      <input type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" value="¿Qué ciudad estás buscando?">
+                      <ul class="dropdown-menu" style="text-decoration: none; color: black;" aria-labelledby="dropdownMenuLink" role="menu">
+                          <li><a href="#">Acapulco</a></li>
+                          <li><a href="#">Aguascalientes</a></li>
+                          <li><a href="#">Cuernavaca</a></li>
+                          <li><a href="#">Guadalajara</a></li>
+                          <li><a href="#">León</a></li>
+                          <li><a href="#">Manzanillo</a></li>
+                          <li><a href="#">Mérida</a></li>
+                          <li><a href="#">Monterrey</a></li>
+                          <li><a href="#">Puebla</a></li>
+                          <li><a href="#">Querétaro</a></li>
+                          <li><a href="#">San Cristóbal</a></li>
+                          <li><a href="#">San Luis Potosí</a></li>
+                          <li><a href="#">Tijuana</a></li>
+                          <li><a href="#">Tuxtla</a></li>
+                          <li><a href="#">Veracruz</a></li>
+                        </ul>
+                      </div>
 
-                      <input style="margin-bottom: 20px;" type="submit" value="¿Para cuántas personas?">
+                      <div>
+                      <input style="margin-bottom: 20px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" value="¿Para cuántas personas?">
+                      <ul class="dropdown-menu" style="text-decoration: none; color: black;" aria-labelledby="dropdownMenuLink" role="menu">
+                          <li><a href="#">10</a></li>
+                          <li><a href="#">20</a></li>
+                          <li><a href="#">30</a></li>
+                          <li><a href="#">40</a></li>
+                        </ul>
+                      </div>
 
                   
                       Mi presupuesto es de:
                       <input class="barra" type="range" min="1850" max="5000" >
                       $1850.00 a $5000.00 mxn
 
-                      <input style="margin-bottom: 20px" type="submit" value="¡Vamos allá!">
+                      <input style="margin-bottom: 20px" type="button" value="¡Vamos allá!">
                       
                       <h6>Sin depósito ni plazo forzoso <br> <b> desde $1,850.00</b> <br> por membresía individual. </h6>
                       
@@ -84,327 +114,427 @@
 
         <section class="ciudades">
 
-
-
-
-                <!-- <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+            <div class="container cta-100">
+                <div class="container">
+                  <div class="row blog">
+                    <div class="col-md-12">
+                      <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
                         <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" style="background-color: orange;" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" style="background-color:  orange;" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleIndicators" style="background-color:  orange;" data-slide-to="2"></li>
-    
+                          <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#blogCarousel" data-slide-to="1"></li>
+                          <li data-target="#blogCarousel" data-slide-to="2"></li>
+                          <li data-target="#blogCarousel" data-slide-to="3"></li>
+                          <li data-target="#blogCarousel" data-slide-to="4"></li>
                         </ol>
+                        <!-- Carousel items -->
                         <div class="carousel-inner">
-                          <div class="carousel-item active row">
+                          <div class="carousel-item active">
                             <div class="row">
-                              <div class="col-6 col-md-4">
-                            <div class="card">
-                              <div class="card-body1" style="padding-left: 5;">
-                                    <a href="formularioGDL.html" target="_blank"><img class="imagen" src="Assets/imagenes/GDL_spacemates_landing.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Guadalajara</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1650.00 mensual por puesto de trabajo 
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                              <div class="col-6 col-md-4">
-                            <div class="card">
-                              <div class="card-body1">
-                                    <a href="formularioQRO.html" target="_blank"><img class="imagen" src="Assets/imagenes/queretaro2.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Querétaro</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1950.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                              <div class="col-md-4 d-md-block d-none">
-                            <div class="card">
-                              <div class="card-body1">
-                                    <a href="formularioSNL.html" target="_blank"><img class="imagen" src="Assets/imagenes/SLP_spacemates_landing.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">San Luis</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1850.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                               <div class="col-6 col-md-4">
-                            <div class="card">
-                              <div class="card-body2">
-                                    <a href="formularioAca.html" target="_blank"><img class="imagen" src="Assets/imagenes/Acapulco.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Acapulco</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1850.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                              <div class="col-6 col-md-4">
-                            <div class="card">
-                              <div class="card-body2">
-                                    <a href="formularioAgs.html" target="_blank"><img class="imagen" src="Assets/imagenes/Aguascalientes.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Aguascalientes</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1850.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                              <div class="col-md-4 d-md-block d-none">
-                            <div class="card">
-                              <div class="card-body2">
-                                    <a href="formularioMer.html" target="_blank"><img class="imagen" src="Assets/imagenes/meridajpeg.jpeg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Mérida</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1850.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                              <div class="col-6 col-md-4">
-                            <div class="card">
-                              <div class="card-body3">
-                                    <a href="formularioSCris.html" target="_blank"><img class="imagen" src="Assets/imagenes/San-Cristobaljpg.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">San Cristóbal</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1850.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                              <div class="col-6 col-md-4">
-                            <div class="card">
-                              <div class="card-body3">
-                                    <a href="formularioTux.html" target="_blank"><img class="imagen" src="Assets/imagenes/Tuxtla.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Tuxtla</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1850.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-                              <div class="col-md-4 d-md-block d-none">
-                            <div class="card">
-                              <div class="card-body3">
-                                    <a href="formularioTor.html" target="_blank"><img class="imagen" src="Assets/imagenes/Torreon.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Torreón</h1>
-                                <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                        Desde $1850.00 mensual por puesto de trabajo
-                                        <li>Oficina Privada</li>
-                                        <li>Espacio compartido</li>
-                                        <li>Salas de juntas</li>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-
-                              <div class="carousel-item">
-                                <div class="row">
-                                   <div class="col-6 col-md-4">
-                                <div class="card">
-                                  <div class="card-body2">
-                                        <a href="formularioAca.html" target="_blank"><img class="imagen" src="Assets/imagenes/Acapulco.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                    <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Acapulco</h1>
-                                    <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                            Desde $1850.00 mensual por puesto de trabajo
-                                            <li>Oficina Privada</li>
-                                            <li>Espacio compartido</li>
-                                            <li>Salas de juntas</li>
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                    <div class="item-box-blog-heading">
+                                        <a href="#" tabindex="0">
+                                          <h5>Guadalajara</h5>
+                                        </a>
+                                      </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/GDL_spacemates_landing.jpg" style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
+                                    <!--Heading-->
+                                    <!--Data-->
+                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                    </div>
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona</p>
                                     </div>
                                   </div>
                                 </div>
+                              </div>
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                      <!--Heading-->
+                                      <div class="item-box-blog-heading">
+                                          <a href="#" tabindex="0">
+                                            <h5>Querétaro</h5>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/queretaro2.jpg" style="width: 100%; height: 200px;"> </figure>
                                   </div>
-                                  <div class="col-6 col-md-4">
-                                <div class="card">
-                                  <div class="card-body2">
-                                        <a href="formularioAgs.html" target="_blank"><img class="imagen" src="Assets/imagenes/Aguascalientes.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                                    <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Aguascalientes</h1>
-                                    <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                            Desde $1850.00 mensual por puesto de trabajo
-                                            <li>Oficina Privada</li>
-                                            <li>Espacio compartido</li>
-                                            <li>Salas de juntas</li>
+                                  <div class="item-box-blog-body">
+                                  
+                                      </a>
                                     </div>
-                                  </div>
-                                </div>
-                                  </div>
-                                  <div class="col-md-4 d-md-block d-none">
-                                <div class="card">
-                                  <div class="card-body2">
-                                        <a href="formularioMer.html" target="_blank"><img class="imagen" src="Assets/imagenes/meridajpeg.jpeg" style="height: 25vh; width: 100%;" alt=""></a>
-                                    <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Mérida</h1>
-                                    <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                            Desde $1850.00 mensual por puesto de trabajo
-                                            <li>Oficina Privada</li>
-                                            <li>Espacio compartido</li>
-                                            <li>Salas de juntas</li>
+                                    <!--Data-->
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona.</p>
                                     </div>
-                                  </div>
-                                </div>
+
+                                    <!--Read More Button-->
                                   </div>
                                 </div>
                               </div>
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                      <a href="#" tabindex="0">
+                                        <h5>San Luis Potosí</h5>
+                                      </a>
+                                    </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/SLP_spacemates_landing.jpg" style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
 
-                              
+                                    <!--Data-->
 
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona.</p>
+                                    </div>
+                                    <!--Read More Button-->
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+                            <!--.row-->
                           </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div> -->
-        </section>
+                          <!--.item-->
+                          <div class="carousel-item ">
+                            <div class="row">
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                   <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                      <a href="#" tabindex="0">
+                                        <h5>Puebla</h5>
+                                      </a>
+                                    </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/puebla1.jpg" style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
 
-        <!-- <section class="ciudades">
+                                    <!--Data-->
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona</p>
+                                    </div>
+                                    <!--Read More Button-->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                      <a href="#" tabindex="0">
+                                        <h5>Monterrey</h5>
+                                      </a>
+                                    </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/monterrey1.jpg" style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
 
+                                    <!--Data-->
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                      <a href="#" tabindex="0">
+                                        <h5>Aguascalientes</h5>
+                                      </a>
+                                    </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/Aguascalientes.jpg" style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
 
-          <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" style="background-color: orange;" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" style="background-color:  orange;" data-slide-to="1"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active row">
-                      <div class="row">
-                        <div class="col-6 col-md-4">
-                      <div class="card">
-                        <div class="card-body1" style="padding-left: 5;">
-                              <a href="formularioPue.html" target="_blank"><img class="imagen" src="Assets/imagenes/puebla1.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                          <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Puebla</h1>
-                          <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                  Desde $1650.00 mensual por puesto de trabajo 
-                                  <li>Oficina Privada</li>
-                                  <li>Espacio compartido</li>
-                                  <li>Salas de juntas</li>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                        <div class="col-6 col-md-4">
-                      <div class="card">
-                        <div class="card-body1">
-                              <a href="formularioMon.html" target="_blank"><img class="imagen" src="Assets/imagenes/monterrey1.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                          <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Monterrey</h1>
-                          <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                  Desde $1950.00 mensual por puesto de trabajo
-                                  <li>Oficina Privada</li>
-                                  <li>Espacio compartido</li>
-                                  <li>Salas de juntas</li>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                        <div class="col-md-4 d-md-block d-none">
-                      <div class="card">
-                        <div class="card-body1">
-                              <a href="formularioTij.html" target="_blank"><img class="imagen" src="Assets/imagenes/tijuana.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                          <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Tijuana</h1>
-                          <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                  Desde $1850.00 mensual por puesto de trabajo
-                                  <li>Oficina Privada</li>
-                                  <li>Espacio compartido</li>
-                                  <li>Salas de juntas</li>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                         <div class="col-6 col-md-4">
-                      <div class="card">
-                        <div class="card-body2">
-                              <a href="formularioZac.html" target="_blank"><img class="imagen" src="Assets/imagenes/Zacatecas.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                          <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Zacatecas</h1>
-                          <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                  Desde $1850.00 mensual por puesto de trabajo
-                                  <li>Oficina Privada</li>
-                                  <li>Espacio compartido</li>
-                                  <li>Salas de juntas</li>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                        <div class="col-6 col-md-4">
-                      <div class="card">
-                        <div class="card-body2">
-                              <a href="formularioMan.html" target="_blank"><img class="imagen" src="Assets/imagenes/Aguascalientes.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                          <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Manzanillo</h1>
-                          <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                  Desde $1850.00 mensual por puesto de trabajo
-                                  <li>Oficina Privada</li>
-                                  <li>Espacio compartido</li>
-                                  <li>Salas de juntas</li>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                        <div class="col-md-4 d-md-block d-none">
-                      <div class="card">
-                        <div class="card-body2">
-                              <a href="formularioCue.html" target="_blank"><img class="imagen" src="Assets/imagenes/Cuernavaca.jpg" style="height: 25vh; width: 100%;" alt=""></a>
-                          <h1 style="font-family:'Gotham'; font-size: 2rem; padding-top: 15px;">Cuernavaca</h1>
-                          <div class="card-text" style="padding:10px 10px; color:blue; font-family:'Gotham'">
-                                  Desde $1850.00 mensual por puesto de trabajo
-                                  <li>Oficina Privada</li>
-                                  <li>Espacio compartido</li>
-                                  <li>Salas de juntas</li>
-                          </div>
-                        </div>
-                      </div>
-                        </div>
-                      </div>
-      
+                                    <!--Data-->
 
-                        
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--.row-->
+                          </div>
+                          <div class="carousel-item ">
+                          <div class="row">
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                      <a href="#" tabindex="0">
+                                        <h5>León</h5>
+                                      </a>
+                                    </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/Leon.jpg" style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
 
-                      </div>
+                                    <!--Data-->
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                    <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                      <a href="#" tabindex="0">
+                                        <h5>Mérida</h5>
+                                      </a>
+                                    </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/meridajpeg.jpeg"style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
+                                    <!--Data-->
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona.</p>
+                                    </div>
+
+                                    <!--Read More Button-->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4" >
+                                <div class="item-box-blog">
+                                  <div class="item-box-blog-image">
+                                    <!--Date-->
+                                    
+                                   <!--Heading-->
+                                    <div class="item-box-blog-heading">
+                                      <a href="#" tabindex="0">
+                                        <h5>Manzanillo</h5>
+                                      </a>
+                                    </div>
+                                    <!--Image-->
+                                    <figure> <img alt="" src="Assets/imagenes/mnzanillo.jpg" style="width: 100%; height: 200px;"> </figure>
+                                  </div>
+                                  <div class="item-box-blog-body">
+                                    <!--Data-->
+                                    <!--Text-->
+                                    <div class="item-box-blog-text">
+                                      <p>Desde $1850.00 mensual por persona.</p>
+                                    </div>
+                                    <!--Read More Button-->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <!--.item-->
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-md-4" >
+                                  <div class="item-box-blog">
+                                    <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      
+                                      <!--Heading-->
+                                      <div class="item-box-blog-heading">
+                                        <a href="#" tabindex="0">
+                                          <h5>Acapulco</h5>
+                                        </a>
+                                      </div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="Assets/imagenes/Acapulco.jpg" style="width: 100%; height: 200px;"> </figure>
+                                    </div>
+                                    <div class="item-box-blog-body">
+                                      <!--Data-->
+                                      <!--Text-->
+                                      <div class="item-box-blog-text">
+                                        <p>Desde $1850.00 mensual por persona.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4" >
+                                  <div class="item-box-blog">
+                                    <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      
+                                      <!--Heading-->
+                                      <div class="item-box-blog-heading">
+                                        <a href="#" tabindex="0">
+                                          <h5>San Cristóbal</h5>
+                                        </a>
+                                      </div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="Assets/imagenes/San-Cristobaljpg.jpg" style="width: 100%; height: 200px;"> </figure>
+                                    </div>
+                                    <div class="item-box-blog-body">
+                                      <!--Data-->
+                                      <!--Text-->
+                                      <div class="item-box-blog-text">
+                                        <p>Desde $1850.00 mensual por persona</p>
+                                      </div>
+  
+                                      <!--Read More Button-->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4" >
+                                  <div class="item-box-blog">
+                                    <div class="item-box-blog-image">
+                                      <!--Date-->
+                                      
+                                      <!--Heading-->
+                                      <div class="item-box-blog-heading">
+                                        <a href="#" tabindex="0">
+                                          <h5>Tijuana</h5>
+                                        </a>
+                                      </div>
+                                      <!--Image-->
+                                      <figure> <img alt="" src="Assets/imagenes/tijuana.jpg" style="width: 100%; height: 200px;"> </figure>
+                                    </div>
+                                    <div class="item-box-blog-body">
+                                      <!--Data-->
+                                      <!--Text-->
+                                      <div class="item-box-blog-text">
+                                        <p>Desde $1850.00 mensual por persona.</p>
+                                      </div>
+                                      <!--Read More Button-->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!--.item-->
+                          </div>
+
+                          <div class="carousel-item ">
+                              <div class="row">
+                                  <div class="col-md-4" >
+                                    <div class="item-box-blog">
+                                      <div class="item-box-blog-image">
+                                        <!--Date-->
+                                        
+                                        <!--Heading-->
+                                        <div class="item-box-blog-heading">
+                                          <a href="#" tabindex="0">
+                                            <h5>Torreón</h5>
+                                          </a>
+                                        </div>
+                                        <!--Image-->
+                                        <figure> <img alt="" src="Assets/imagenes/Torreon.jpg" style="width: 100%; height: 200px;"> </figure>
+                                      </div>
+                                      <div class="item-box-blog-body">
+                                        <!--Data-->
+                                        <!--Text-->
+                                        <div class="item-box-blog-text">
+                                          <p>Desde $1850.00 mensual por persona.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4" >
+                                    <div class="item-box-blog">
+                                      <div class="item-box-blog-image">
+                                        <!--Date-->
+                                        
+                                        <!--Heading-->
+                                        <div class="item-box-blog-heading">
+                                          <a href="#" tabindex="0">
+                                            <h5>Tuxtla</h5>
+                                          </a>
+                                        </div>
+                                        <!--Image-->
+                                        <figure> <img alt="" src="Assets/imagenes/Tuxtla.jpg" style="width: 100%; height: 200px;"> </figure>
+                                      </div>
+                                      <div class="item-box-blog-body">
+                                        <!--Data-->
+                                        <!--Text-->
+                                        <div class="item-box-blog-text">
+                                          <p>Desde $1850.00 mensual por persona.</p>
+                                        </div>
+    
+                                        <!--Read More Button-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4" >
+                                    <div class="item-box-blog">
+                                      <div class="item-box-blog-image">
+                                        <!--Date-->
+                                        
+                                        <!--Heading-->
+                                        <div class="item-box-blog-heading">
+                                          <a href="#" tabindex="0">
+                                            <h5>Veracruz</h5>
+                                          </a>
+                                        </div>
+                                        <!--Image-->
+                                        <figure> <img alt="" src="Assets/imagenes/Veracruz.jpg"style="width: 100%; height: 200px;"> </figure>
+                                      </div>
+                                      <div class="item-box-blog-body">
+                                        <!--Data-->
+                                        <!--Text-->
+                                        <div class="item-box-blog-text">
+                                          <p>Desde $1850.00 mensual por persona.</p>
+                                        </div>
+                                        <!--Read More Button-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              <!--.item-->
+                            </div>
+
+                        </div>
+
+                             
+                      <!--.Carousel-->
                     </div>
                   </div>
-            
                 </div>
-              </section> -->
+              </div>
+
+        </section>
 
                 <section class="banner">
 
@@ -455,20 +585,22 @@
                               <p style="text-align: justify;" class="card-text">Monetiza tu espacio y optimiza tu stock sin esfuerzo extra. Sólo necesitas asegurarte de mantener tu espacio cool.</p>
                             </div>
                           </div>
+                       
+                       
                         </div>
-
-                        <input type="submit" value="¿Qué ciudad estás buscando?">
-
                 </section>
 
-                <section class="clientes">
+                <div class="encabezado1">
+                    <input style="margin-bottom: 20px; width: 30%; justify-content: center;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" value="¿Para cuántas personas?">
+                </div>
+
+                <section class="clientes"> 
                     <h1>Ellos te mandan saludos desde el futuro del trabajo</h1>
                   <div class="ico-clientes">
                     <img style="height: 40vh; width: 30%;" src="Assets/Logos/11-coca-cola-gris.png" alt="">
                     <img style="height: 40vh; width: 30%;" src="Assets/Logos/09-google-gris.png" alt="">
                     <img style="height: 40vh; width: 30%;" src="Assets/Logos/citroen_nuevo_logo_2.jpg" alt="">
                     <img style="height: 40vh; width: 30%;" src="Assets/Logos/logos-nintendo.jpg" alt="">
-
                   </div>
                 </section>
       
@@ -495,20 +627,18 @@
 
         </footer>
     <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <script>
             $(window).scroll(function() {
-                if ($("#menu").offset().top > 56) {
-                    $("#menu").addClass("bg-light");
+                if ($(".menu").offset().top > 56) {
+                    $(".menu").addClass("bg-light");
                 } else {
-                    $("#menu").removeClass("bg-trasnparent");
+                    $(".menu").removeClass("bg-trasnparent");
                 }
             });
-            
         </script>
-    </script>
   </body>
 </html>
